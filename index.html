@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Union Foods | Pure Food for a Healthier Life | Bhubaneswar, Odisha</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Union Foods brings purity, nutrition, and taste to every home with our premium range of Cooking Oils, Chakki Atta, Pulses, and Spices. Hygienically processed and 100% natural.">
+  <meta name="keywords" content="Union Foods, Sunflower Oil, Sharbati Atta, Moong Dal, Chana Dal, Odisha Food Products, Bhubaneswar, Healthy Grocery">
+  <meta name="author" content="Union Foods Private Limited">
+  
+  <!-- Google Fonts: Poppins (Clean Modern UI) & Playfair Display (Food/Atta Branding) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,700&family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+  <!-- Primary CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+<!-- ==========================================================================
+       2. MAIN NAVIGATION (Header)
+       ========================================================================= -->
+  <header class="main-header" role="banner">
+    <div class="container header-container">
+      <!-- Brand Logo (Apple Glassmorphism / Image 2 Style) -->
+      <a href="#home" class="brand-logo-link" aria-label="Union Foods Home">
+        <img src="assets/images/union-foods-logo.png" alt="Union Foods Crest" class="brand-logo-img">
+        <div class="brand-logo-text-group">
+          <span class="brand-name-text">UNION FOODS</span>
+          <span class="brand-tagline-text">Pure &amp; Natural</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav id="desktop-nav" class="desktop-nav" role="navigation" aria-label="Main menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        
+        <!-- Products Dropdown -->
+        <div class="nav-dropdown-item">
+          <a href="#products-section" class="nav-link">
+            <span>Products</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#products-section" class="dropdown-link" onclick="window.UnionFoods.currentCategory='oil'">
+              <svg viewBox="0 0 24 24"><path d="M12 2c-5.33 4.55-8 8.48-8 11.8 0 4.98 3.8 8.2 8 8.2s8-3.22 8-8.2c0-3.32-2.67-7.25-8-11.8z"/></svg>
+              <span>Cooking Oils</span>
+            </a>
+            <a href="#products-section" class="dropdown-link" onclick="window.UnionFoods.currentCategory='flour'">
+              <svg viewBox="0 0 24 24"><path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1z"/></svg>
+              <span>Flour & Grains</span>
+            </a>
+            <a href="#products-section" class="dropdown-link" onclick="window.UnionFoods.currentCategory='pulses'">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span>Pulses & Dal</span>
+            </a>
+            <a href="#products-section" class="dropdown-link" onclick="window.UnionFoods.currentCategory='spices'">
+              <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3z"/></svg>
+              <span>Pure Spices</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#recipes" class="nav-link">Recipes</a>
+        <a href="#why-choose" class="nav-link">Sustainability</a>
+        <a href="#locations" class="nav-link">Locations</a>
+        <a href="#facility-tour-btn" class="nav-link" onclick="window.UnionFoods.openFacilityModal()">Gallery</a>
+        <a href="#news-events" class="nav-link">News</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Smart Search Input in Header (Desktop / Tablet) -->
+      <div class="header-search-wrap" id="header-search-wrap">
+        <form class="header-search-form" onsubmit="window.UnionFoods.handleHeaderSearch(event)">
+          <div class="search-input-shell">
+            <span class="search-prefix-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </span>
+            <input 
+              type="search" 
+              id="nav-search-input" 
+              class="nav-search-input" 
+              placeholder="Search products, categories, offers..." 
+              autocomplete="off" 
+              aria-label="Search Union Foods website content"
+              aria-autocomplete="list"
+              aria-controls="nav-search-suggestions"
+            >
+            <button type="button" id="nav-search-clear-btn" class="nav-search-clear-btn" aria-label="Clear search query" style="display: none;">
+              <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+            <button type="submit" class="nav-search-submit-btn" aria-label="Submit search">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </button>
+          </div>
+        </form>
+
+        <!-- Live Autocomplete Suggestions Dropdown -->
+        <div id="nav-search-suggestions" class="nav-search-suggestions" role="listbox" aria-label="Search suggestions" style="display: none;">
+          <div class="suggestions-header">Quick Matches</div>
+          <div id="suggestions-list-box" class="suggestions-list-box"></div>
+          <div class="suggestions-footer">
+            <span>Press <kbd>&uarr;</kbd> <kbd>&darr;</kbd> to navigate, <kbd>&crarr;</kbd> to select, <kbd>Esc</kbd> to close</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Search Trigger (Modal for Mobile & Quick View) -->
+        <button class="action-icon-btn mobile-search-btn" onclick="window.UnionFoods.openSearchModal()" title="Search Food Items" aria-label="Search">
+          <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </button>
+
+        <!-- Header Theme Toggle -->
+        <button id="theme-toggle-btn" class="action-icon-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+        </button>
+
+        <!-- Cart Trigger with Counter Badge -->
+        <button class="action-icon-btn" onclick="window.UnionFoods.openCartDrawer()" title="View Shopping Cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <span id="cart-count-badge" class="action-badge">0</span>
+        </button>
+
+        <!-- Order Now CTA Button -->
+        <button class="btn-primary" onclick="window.UnionFoods.startCheckout()">
+          <span>Order Now</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburger-toggle" class="hamburger-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- ==========================================================================
+       3. BELOW-NAVBAR HERO IMAGE SLIDER (5/6 Auto-Scrolling Images)
+       ========================================================================== -->
+  <section id="hero-slider" class="hero-slider-section" aria-label="Union Foods Featured Visual Highlights">
+    <div class="hero-slider-container">
+      <div class="hero-slider-track" id="hero-slider-track">
+        <!-- Slide 1: Panoramic Product Showcase -->
+        <div class="hero-slide active" data-index="0">
+          <img src="assets/images/banner-1-products.jpg" alt="Union Foods Quality Crafting Range" class="hero-slide-img" loading="eager">
+          <div class="hero-slide-overlay">
+            <div class="container slide-content-box">
+              <span class="slide-tag">Pure Food For A Healthier Life</span>
+              <h2 class="slide-heading">Crafting Purity &amp; Quality Since 1982</h2>
+              <p class="slide-desc">From whole farm-fresh grains to 100% natural cold-pressed oils, experience nutrition without compromise.</p>
+              <div class="slide-cta-row">
+                <a href="#products-section" class="btn-primary">Explore Products &rarr;</a>
+                <button class="btn-secondary" onclick="window.UnionFoods.openSearchModal('Offers')">Limited Offers</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Golden Wheat Harvest & Farmer -->
+        <div class="hero-slide" data-index="1">
+          <img src="assets/images/banner-2-farmer.jpg" alt="Odisha Golden Wheat Fields &amp; Farming Tradition" class="hero-slide-img" loading="lazy">
+          <div class="hero-slide-overlay">
+            <div class="container slide-content-box">
+              <span class="slide-tag">Farm-Direct Purity</span>
+              <h2 class="slide-heading">Sourced Direct From Trusted Indian Farmers</h2>
+              <p class="slide-desc">Grounded in traditional cultivation, supporting local farm communities across Odisha with fair trade practices.</p>
+              <div class="slide-cta-row">
+                <a href="#why-choose" class="btn-primary">Our Farm Promise &rarr;</a>
+                <a href="#locations" class="btn-secondary">Explore Locations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Authentic Indian Culinary Delights -->
+        <div class="hero-slide" data-index="2">
+          <img src="assets/images/banner-3-culinary.jpg" alt="Authentic Culinary Delights" class="hero-slide-img" loading="lazy">
+          <div class="hero-slide-overlay">
+            <div class="container slide-content-box">
+              <span class="slide-tag">Master Chef Recipes</span>
+              <h2 class="slide-heading">Master Every Recipe With Pure Staples</h2>
+              <p class="slide-desc">From steaming Shahi Paneer to crispy rotis, golden samosas and dal fry, taste purity in every home recipe.</p>
+              <div class="slide-cta-row">
+                <a href="#recipes" class="btn-primary">Explore Recipes &rarr;</a>
+                <button class="btn-secondary" onclick="window.UnionFoods.openRecipeModal()">Cook Tonight</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Complete Pantry Family Packaging -->
+        <div class="hero-slide" data-index="3">
+          <img src="assets/images/banner-4-pantry.jpg" alt="Union Foods Complete Grocery Pantry Collection" class="hero-slide-img" loading="lazy">
+          <div class="hero-slide-overlay">
+            <div class="container slide-content-box">
+              <span class="slide-tag">Complete Daily Essentials</span>
+              <h2 class="slide-heading">Oils, Atta, Dals, Spices &amp; Snacks</h2>
+              <p class="slide-desc">Triple-cleaned, micro-filtered, and sealed with tamper-evident hygienic packaging for guaranteed freshness.</p>
+              <div class="slide-cta-row">
+                <a href="#products-section" class="btn-primary">Shop All Essentials &rarr;</a>
+                <button class="btn-secondary" onclick="window.UnionFoods.openCartDrawer()">Fast Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5: The 6 Product Categories Emblem -->
+        <div class="hero-slide" data-index="4">
+          <img src="assets/images/banner-5-categories.jpg" alt="Union Foods 6 Core Categories" class="hero-slide-img" loading="lazy">
+          <div class="hero-slide-overlay">
+            <div class="container slide-content-box">
+              <span class="slide-tag">Certified Nutrition</span>
+              <h2 class="slide-heading">FSSAI Certified &amp; ISO 22000 Approved</h2>
+              <p class="slide-desc">Six core nutritional categories developed to safeguard the health, energy, and wellness of your family.</p>
+              <div class="slide-cta-row">
+                <a href="#categories-section" class="btn-primary">Browse Categories &rarr;</a>
+                <a href="#certifications-section" class="btn-secondary">View Quality Certs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6: Express Delivery Harvest Banner -->
+        <div class="hero-slide" data-index="5">
+          <img src="assets/images/banner-6-harvest.jpg" alt="Golden Harvest Odisha" class="hero-slide-img" loading="lazy">
+          <div class="hero-slide-overlay">
+            <div class="container slide-content-box">
+              <span class="slide-tag">Express Delivery In Odisha</span>
+              <h2 class="slide-heading">Delivering Farm Purity Straight To Your Door</h2>
+              <p class="slide-desc">Enjoy free same-day or next-day express delivery across Bhubaneswar, Cuttack, and Odisha on orders above ₹499.</p>
+              <div class="slide-cta-row">
+                <button class="btn-primary" onclick="window.UnionFoods.startCheckout()">Order Online Now &rarr;</button>
+                <a href="#locations" class="btn-secondary">Check PIN Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <button id="hero-slider-prev" class="slider-arrow-btn prev" aria-label="Previous Slide">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button id="hero-slider-next" class="slider-arrow-btn next" aria-label="Next Slide">
+        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+
+      <!-- Slide Indicators -->
+      <div class="slider-dots" id="hero-slider-dots">
+        <button class="slider-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="slider-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="slider-dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="slider-dot" data-index="3" aria-label="Slide 4"></button>
+        <button class="slider-dot" data-index="4" aria-label="Slide 5"></button>
+        <button class="slider-dot" data-index="5" aria-label="Slide 6"></button>
+      </div>
+    </div>
+  </section>
+<!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         4. HERO SECTION (Reference Design Accurate)
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              <span>NATURAL &amp; DELICIOUS</span>
+            </div>
+
+            <h1 class="hero-title">
+              Pure Food for a
+              <span class="highlight-gold">Healthier Life</span>
+            </h1>
+
+            <p class="hero-description">
+              Discover a range of high-quality, hygienic and tasty food products for you and your family. 100% natural, unadulterated, and freshly packaged from source.
+            </p>
+
+            <div class="hero-btn-group">
+              <a href="#featured-products" class="btn-primary">
+                <span>Explore Products</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </a>
+              <button class="btn-secondary" onclick="window.UnionFoods.openFacilityModal()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span>Our Story</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column Showcase of Flagship Products -->
+          <div class="hero-showcase-wrap">
+            <img src="assets/images/podium-products-showcase.png" alt="Union Foods Sunflower Oil, Premium Atta, Moong Dal, Chana Dal Showcase" class="hero-main-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. VALUE PROPOSITION STRIP (6 Icon Pillars matching reference)
+         ========================================================================== -->
+    <section class="value-pillars-section" aria-label="Why Union Foods is trusted">
+      <div class="container">
+        <div class="value-pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div class="pillar-title">100% Hygienic &amp; Safe</div>
+          </div>
+          <!-- Pillar 2 -->
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <div class="pillar-title">Premium Quality</div>
+          </div>
+          <!-- Pillar 3 -->
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"/></svg>
+            </div>
+            <div class="pillar-title">Wide Range of Products</div>
+          </div>
+          <!-- Pillar 4 -->
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            </div>
+            <div class="pillar-title">Reliable Delivery</div>
+          </div>
+          <!-- Pillar 5 -->
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/></svg>
+            </div>
+            <div class="pillar-title">Customer Support</div>
+          </div>
+          <!-- Pillar 6 -->
+          <div class="pillar-item">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <div class="pillar-title">Sustainable &amp; Eco-Friendly</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. SECTION 17: CONTINUOUSLY SCROLLING FOOD OFFERS (Marquee Deals)
+         ========================================================================== -->
+    <section class="offers-slider-section" aria-label="Special Offers and Promotions">
+      <div class="container">
+        <div class="section-header-compact">
+          <div class="section-title-wrap">
+            <span class="section-tag section-tag-mono">// LIMITED_OFFERS</span>
+            <h2 class="section-title section-title-display">Special Offers &amp; Combos</h2>
+          </div>
+          <div class="offers-nav-btns">
+            <button id="offer-prev-btn" class="nav-arrow-btn" aria-label="Previous Offer">
+              <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            <button id="offer-next-btn" class="nav-arrow-btn" aria-label="Next Offer">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="offers-carousel-track" class="offers-carousel-track">
+          <!-- Offer Card 1 -->
+          <div class="offer-card" onclick="window.UnionFoods.addToCart('uf-moong-1', 2)">
+            <span class="offer-badge">BUY 1 GET 1 FREE</span>
+            <div class="offer-header">
+              <h3 class="offer-title">Premium Moong Dal 1 Kg</h3>
+              <p class="offer-desc">Buy one unpolished yellow moong dal pack and get another pack absolutely free.</p>
+            </div>
+            <div class="offer-timer-box">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              <span>Ends in: <strong class="offer-countdown-val">08h 45m 12s</strong></span>
+            </div>
+            <div class="offer-footer">
+              <span class="coupon-pill">CODE: BOGO-MOONG</span>
+              <span class="btn-claim-offer">Claim Offer &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Offer Card 2 -->
+          <div class="offer-card" onclick="window.UnionFoods.addToCart('uf-oil-1', 1)">
+            <span class="offer-badge">20% OFF</span>
+            <div class="offer-header">
+              <h3 class="offer-title">Refined Sunflower Oil 5L Jar</h3>
+              <p class="offer-desc">Flat 20% discount on family economy pack. Light, pure, and enriched with vitamins.</p>
+            </div>
+            <div class="offer-timer-box">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              <span>Ends in: <strong class="offer-countdown-val">08h 45m 12s</strong></span>
+            </div>
+            <div class="offer-footer">
+              <span class="coupon-pill">CODE: SUN20</span>
+              <span class="btn-claim-offer">Claim Offer &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Offer Card 3 -->
+          <div class="offer-card" onclick="window.UnionFoods.addToCart('uf-atta-1', 1)">
+            <span class="offer-badge">FLAT 30% OFF</span>
+            <div class="offer-header">
+              <h3 class="offer-title">Family Essentials Combo</h3>
+              <p class="offer-desc">Sharbati Atta (5kg) + Sunflower Oil (1L) + Moong Dal (1kg) at an unbeatable combo price.</p>
+            </div>
+            <div class="offer-timer-box">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              <span>Ends in: <strong class="offer-countdown-val">08h 45m 12s</strong></span>
+            </div>
+            <div class="offer-footer">
+              <span class="coupon-pill">CODE: UNION30</span>
+              <span class="btn-claim-offer">Claim Offer &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Offer Card 4 -->
+          <div class="offer-card" onclick="window.UnionFoods.openCartDrawer()">
+            <span class="offer-badge" style="background: linear-gradient(135deg, #16a34a, #15803d);">FREE DELIVERY</span>
+            <div class="offer-header">
+              <h3 class="offer-title">Zero Delivery Fee</h3>
+              <p class="offer-desc">Enjoy free same-day or next-day delivery across Bhubaneswar and Odisha on orders above ₹499.</p>
+            </div>
+            <div class="offer-timer-box" style="color: #15803d; background: #f0fdf4;">
+              <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+              <span>Active For All Odisha Orders</span>
+            </div>
+            <div class="offer-footer">
+              <span class="coupon-pill">AUTO-APPLIED</span>
+              <span class="btn-claim-offer">Shop Now &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ==========================================================================
+         7. OUR PRODUCT CATEGORIES (7 Categories matching reference)
+         ========================================================================== -->
+    <section class="categories-section" aria-label="Browse Categories">
+      <div class="container">
+        <div class="section-title-wrap section-title-center">
+          <h2 class="section-title">Our Product Categories</h2>
+        </div>
+
+        <div class="categories-grid">
+          <!-- 1. Cooking Oil -->
+          <div class="category-card" data-cat="oil" title="View Cooking Oils" onclick="window.UnionFoods.filterCategory('oil')">
+            <div class="category-icon-wrap">
+              <img src="assets/images/cat-oil.jpg" alt="Union Foods Cooking Oil" loading="lazy">
+            </div>
+            <span class="category-name">Cooking Oil</span>
+          </div>
+
+          <!-- 2. Flour & Grains -->
+          <div class="category-card" data-cat="flour" title="View Flour & Grains" onclick="window.UnionFoods.filterCategory('flour')">
+            <div class="category-icon-wrap">
+              <img src="assets/images/cat-flour.jpg" alt="Union Foods Flour & Grains" loading="lazy">
+            </div>
+            <span class="category-name">Flour &amp; Grains</span>
+          </div>
+
+          <!-- 3. Pulses & Dal -->
+          <div class="category-card" data-cat="pulses" title="View Pulses & Dal" onclick="window.UnionFoods.filterCategory('pulses')">
+            <div class="category-icon-wrap">
+              <img src="assets/images/cat-pulses.jpg" alt="Union Foods Pulses & Dal" loading="lazy">
+            </div>
+            <span class="category-name">Pulses &amp; Dal</span>
+          </div>
+
+          <!-- 4. Spices -->
+          <div class="category-card" data-cat="spices" title="View Spices" onclick="window.UnionFoods.filterCategory('spices')">
+            <div class="category-icon-wrap">
+              <img src="assets/images/cat-spices.jpg" alt="Union Foods Spices" loading="lazy">
+            </div>
+            <span class="category-name">Spices</span>
+          </div>
+
+          <!-- 5. Snacks -->
+          <div class="category-card" data-cat="snacks" title="View Snacks" onclick="window.UnionFoods.filterCategory('snacks')">
+            <div class="category-icon-wrap">
+              <img src="assets/images/cat-snacks.jpg" alt="Union Foods Snacks" loading="lazy">
+            </div>
+            <span class="category-name">Snacks</span>
+          </div>
+
+          <!-- 6. Beverages -->
+          <div class="category-card" data-cat="beverages" title="View Beverages" onclick="window.UnionFoods.filterCategory('beverages')">
+            <div class="category-icon-wrap">
+              <img src="assets/images/cat-beverages.jpg" alt="Union Foods Beverages" loading="lazy">
+            </div>
+            <span class="category-name">Beverages</span>
+          </div>
+
+          <!-- 7. Packaged Foods -->
+          <div class="category-card" data-cat="packaged" title="View Packaged Foods" onclick="window.UnionFoods.filterCategory('packaged')">
+            <div class="category-icon-wrap">
+              <img src="assets/images/prod-snacks.jpg" alt="Packaged Foods" loading="lazy">
+            </div>
+            <span class="category-name">Packaged Foods</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. ABOUT US SECTION (Good Food for Healthier Families)
+         ========================================================================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Organic Curved Frame for Corporate HQ Building -->
+          <div class="about-image-frame">
+            <div class="about-shape-bg">
+              <img src="assets/images/union-foods-facility.jpg" alt="Union Foods Corporate Headquarters & Processing Plant in Bhubaneswar" class="about-facility-img">
+            </div>
+          </div>
+
+          <!-- Right: Text & Highlights -->
+          <div class="about-content-wrap">
+            <span class="section-tag">ABOUT UNION FOODS</span>
+            <h2 class="about-heading">Good Food for Healthier Families</h2>
+            <p class="about-text">
+              Union Foods is committed to delivering high-quality, safe and nutritious food products. We bring purity, taste and trust to every home with a wide range of daily essentials. Milled and packed in our modern, automated facility located in Bhubaneswar, Odisha.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                </div>
+                <span class="highlight-title">Quality Ingredients</span>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                  <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                </div>
+                <span class="highlight-title">Hygienic Processing</span>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                  <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                </div>
+                <span class="highlight-title">Trusted by Families</span>
+              </div>
+
+              <div class="highlight-box">
+                <div class="highlight-icon-circle">
+                  <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9c0 4.97 4.03 9 9 9s9-4.03 9-9a9 9 0 0 0-9-9zm0 16c-3.86 0-7-3.14-7-7 0-3.86 3.14-7 7-7 3.86 0 7 3.14 7 7 0 3.86-3.14 7-7 7z"/></svg>
+                </div>
+                <span class="highlight-title">Sustainable Sourcing</span>
+              </div>
+            </div>
+
+            <button id="facility-tour-btn" class="btn-primary" onclick="window.UnionFoods.openFacilityModal()">
+              <span>Know More</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. OUR FEATURED PRODUCTS (Carousel matching reference)
+         ========================================================================== -->
+        <section id="featured-products" class="featured-products-section">
+      <div class="container">
+        <div class="section-title-wrap section-title-center">
+          <span class="section-tag section-tag-mono">// POPULAR_PICKS</span>
+          <h2 class="section-title section-title-display">Our Featured Products</h2>
+          <p class="section-subtitle">100% pure, hygienically packed daily staples crafted for wholesome family nutrition.</p>
+        </div>
+
+        <div class="featured-carousel-wrap">
+          <div class="products-grid">
+            <!-- 1. Refined Sunflower Oil -->
+            <div class="product-card" data-id="uf-oil-1" data-category="oil">
+              <div class="product-brand-stamp" title="Union Foods Certified Quality">
+                <img src="assets/images/union-foods-logo.png" alt="Union Foods Quality Seal" class="product-stamp-img">
+                <span class="product-stamp-text">Union Foods</span>
+              </div>
+              <button class="wishlist-heart-btn" data-wishlist-id="uf-oil-1" title="Wishlist" aria-label="Add to Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </button>
+              <div class="product-img-box" onclick="window.UnionFoods.openQuickView('uf-oil-1')">
+                <img src="assets/images/prod-oil.jpg" alt="Refined Sunflower Oil" loading="lazy">
+              </div>
+              <div class="product-meta-header">
+                <h3 class="product-title">Refined Sunflower Oil</h3>
+                <span class="product-volume">1 Litre</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price-current">₹145</span>
+                <span class="product-price-original">₹175</span>
+              </div>
+              <div class="product-actions-group">
+                <button class="btn-view-product" onclick="window.UnionFoods.openQuickView('uf-oil-1')">
+                  <span>View Product</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+                <button class="btn-quick-add" onclick="window.UnionFoods.addToCart('uf-oil-1', 1)" title="Add to Cart">
+                  <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Premium Atta -->
+            <div class="product-card" data-id="uf-atta-1" data-category="flour">
+              <div class="product-brand-stamp" title="Union Foods Certified Quality">
+                <img src="assets/images/union-foods-logo.png" alt="Union Foods Quality Seal" class="product-stamp-img">
+                <span class="product-stamp-text">Union Foods</span>
+              </div>
+              <button class="wishlist-heart-btn" data-wishlist-id="uf-atta-1" title="Wishlist" aria-label="Add to Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </button>
+              <div class="product-img-box" onclick="window.UnionFoods.openQuickView('uf-atta-1')">
+                <img src="assets/images/prod-atta.jpg" alt="Premium Sharbati Atta" loading="lazy">
+              </div>
+              <div class="product-meta-header">
+                <h3 class="product-title">Premium Sharbati Atta</h3>
+                <span class="product-volume">5 Kg</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price-current">₹245</span>
+                <span class="product-price-original">₹280</span>
+              </div>
+              <div class="product-actions-group">
+                <button class="btn-view-product" onclick="window.UnionFoods.openQuickView('uf-atta-1')">
+                  <span>View Product</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+                <button class="btn-quick-add" onclick="window.UnionFoods.addToCart('uf-atta-1', 1)" title="Add to Cart">
+                  <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Moong Dal -->
+            <div class="product-card" data-id="uf-moong-1" data-category="pulses">
+              <div class="product-brand-stamp" title="Union Foods Certified Quality">
+                <img src="assets/images/union-foods-logo.png" alt="Union Foods Quality Seal" class="product-stamp-img">
+                <span class="product-stamp-text">Union Foods</span>
+              </div>
+              <button class="wishlist-heart-btn" data-wishlist-id="uf-moong-1" title="Wishlist" aria-label="Add to Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </button>
+              <div class="product-img-box" onclick="window.UnionFoods.openQuickView('uf-moong-1')">
+                <img src="assets/images/prod-dal.jpg" alt="Unpolished Moong Dal" loading="lazy">
+              </div>
+              <div class="product-meta-header">
+                <h3 class="product-title">Unpolished Moong Dal</h3>
+                <span class="product-volume">1 Kg</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price-current">₹135</span>
+                <span class="product-price-original">₹160</span>
+              </div>
+              <div class="product-actions-group">
+                <button class="btn-view-product" onclick="window.UnionFoods.openQuickView('uf-moong-1')">
+                  <span>View Product</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+                <button class="btn-quick-add" onclick="window.UnionFoods.addToCart('uf-moong-1', 1)" title="Add to Cart">
+                  <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Desi Chana Dal -->
+            <div class="product-card" data-id="uf-chana-1" data-category="pulses">
+              <div class="product-brand-stamp" title="Union Foods Certified Quality">
+                <img src="assets/images/union-foods-logo.png" alt="Union Foods Quality Seal" class="product-stamp-img">
+                <span class="product-stamp-text">Union Foods</span>
+              </div>
+              <button class="wishlist-heart-btn" data-wishlist-id="uf-chana-1" title="Wishlist" aria-label="Add to Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </button>
+              <div class="product-img-box" onclick="window.UnionFoods.openQuickView('uf-chana-1')">
+                <img src="assets/images/prod-dal.jpg" alt="Desi Chana Dal" loading="lazy">
+              </div>
+              <div class="product-meta-header">
+                <h3 class="product-title">Desi Chana Dal</h3>
+                <span class="product-volume">1 Kg</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price-current">₹115</span>
+                <span class="product-price-original">₹140</span>
+              </div>
+              <div class="product-actions-group">
+                <button class="btn-view-product" onclick="window.UnionFoods.openQuickView('uf-chana-1')">
+                  <span>View Product</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+                <button class="btn-quick-add" onclick="window.UnionFoods.addToCart('uf-chana-1', 1)" title="Add to Cart">
+                  <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 5. Pure Turmeric Powder -->
+            <div class="product-card" data-id="uf-haldi-1" data-category="spices">
+              <div class="product-brand-stamp" title="Union Foods Certified Quality">
+                <img src="assets/images/union-foods-logo.png" alt="Union Foods Quality Seal" class="product-stamp-img">
+                <span class="product-stamp-text">Union Foods</span>
+              </div>
+              <button class="wishlist-heart-btn" data-wishlist-id="uf-haldi-1" title="Wishlist" aria-label="Add to Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </button>
+              <div class="product-img-box" onclick="window.UnionFoods.openQuickView('uf-haldi-1')">
+                <img src="assets/images/prod-spices.jpg" alt="Pure Turmeric Powder" loading="lazy">
+              </div>
+              <div class="product-meta-header">
+                <h3 class="product-title">Pure Turmeric Powder</h3>
+                <span class="product-volume">500 g</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price-current">₹95</span>
+                <span class="product-price-original">₹120</span>
+              </div>
+              <div class="product-actions-group">
+                <button class="btn-view-product" onclick="window.UnionFoods.openQuickView('uf-haldi-1')">
+                  <span>View Product</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+                <button class="btn-quick-add" onclick="window.UnionFoods.addToCart('uf-haldi-1', 1)" title="Add to Cart">
+                  <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 6. Crispy Moong Dal Namkeen -->
+            <div class="product-card" data-id="uf-snacks-1" data-category="snacks">
+              <div class="product-brand-stamp" title="Union Foods Certified Quality">
+                <img src="assets/images/union-foods-logo.png" alt="Union Foods Quality Seal" class="product-stamp-img">
+                <span class="product-stamp-text">Union Foods</span>
+              </div>
+              <button class="wishlist-heart-btn" data-wishlist-id="uf-snacks-1" title="Wishlist" aria-label="Add to Wishlist">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </button>
+              <div class="product-img-box" onclick="window.UnionFoods.openQuickView('uf-snacks-1')">
+                <img src="assets/images/prod-snacks.jpg" alt="Crispy Moong Dal Namkeen" loading="lazy">
+              </div>
+              <div class="product-meta-header">
+                <h3 class="product-title">Crispy Moong Dal Namkeen</h3>
+                <span class="product-volume">400 g</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price-current">₹85</span>
+                <span class="product-price-original">₹105</span>
+              </div>
+              <div class="product-actions-group">
+                <button class="btn-view-product" onclick="window.UnionFoods.openQuickView('uf-snacks-1')">
+                  <span>View Product</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </button>
+                <button class="btn-quick-add" onclick="window.UnionFoods.addToCart('uf-snacks-1', 1)" title="Add to Cart">
+                  <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. INTERACTIVE PRODUCT CATALOG & FILTER ENGINE
+         ========================================================================== -->
+    <section id="products-section" class="catalog-section">
+      <div class="container">
+        <div class="section-title-wrap section-title-center" style="margin-bottom: 1.75rem;">
+          <span class="section-tag section-tag-mono">// COMPLETE_RANGE</span>
+          <h2 class="section-title section-title-display">All Products &amp; Daily Essentials</h2>
+          <p class="section-subtitle">From whole grains and cold-pressed cooking oils to unpolished dals, aromatic spices, and traditional snacks.</p>
+        </div>
+
+        <!-- Complete Range Podium Showcase Banner (Image 1 Composition) -->
+        <div class="podium-showcase-container">
+          <img src="assets/images/podium-products-showcase.png" alt="Union Foods Complete Range - Milled and Packed Daily Essentials" class="podium-showcase-img" loading="lazy">
+          <div class="podium-showcase-tag">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 10h2v4h-2zm0 6h2v2h-2z"/></svg>
+            <span>Certified 100% Pure &amp; Farm-Fresh Since 1982</span>
+          </div>
+        </div>
+
+        <div class="catalog-controls-bar">
+          <div class="filter-tabs-group">
+            <button class="filter-tab-btn active" data-filter="all">All Products</button>
+            <button class="filter-tab-btn" data-filter="oil">Cooking Oils</button>
+            <button class="filter-tab-btn" data-filter="flour">Flours &amp; Atta</button>
+            <button class="filter-tab-btn" data-filter="pulses">Pulses &amp; Dal</button>
+            <button class="filter-tab-btn" data-filter="spices">Pure Spices</button>
+            <button class="filter-tab-btn" data-filter="snacks">Snacks &amp; Namkeen</button>
+          </div>
+
+          <div class="catalog-sort-wrap">
+            <label for="catalog-sort-select" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Sort By:</label>
+            <select id="catalog-sort-select" class="sort-select">
+              <option value="popular">Most Popular</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+              <option value="name">Alphabetical</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Rendered by JavaScript -->
+        <div id="catalog-grid" class="products-grid"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. "WHY CHOOSE UNION FOODS?" FULL-WIDTH RIBBON (Reference Design)
+         ========================================================================== -->
+    <section id="why-choose" class="why-choose-ribbon">
+      <div class="container">
+        <div class="why-ribbon-inner">
+          <div class="why-ribbon-title">
+            Why Choose
+            <span>Union Foods?</span>
+          </div>
+
+          <div class="why-pillars-container">
+            <!-- 1. Farm to Home -->
+            <div class="why-pillar">
+              <div class="why-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+              </div>
+              <span class="why-pillar-text">Farm to Home</span>
+            </div>
+
+            <!-- 2. Assured Quality -->
+            <div class="why-pillar">
+              <div class="why-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              </div>
+              <span class="why-pillar-text">Assured Quality</span>
+            </div>
+
+            <!-- 3. Modern Processing -->
+            <div class="why-pillar">
+              <div class="why-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M22 22H2V11l6-5 6 5v-3l6 5v9zm-10-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+              </div>
+              <span class="why-pillar-text">Modern Processing</span>
+            </div>
+
+            <!-- 4. No Harmful Additives -->
+            <div class="why-pillar">
+              <div class="why-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              </div>
+              <span class="why-pillar-text">No Harmful Additives</span>
+            </div>
+
+            <!-- 5. Trusted by Thousands -->
+            <div class="why-pillar">
+              <div class="why-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              </div>
+              <span class="why-pillar-text">Trusted by Thousands</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. TASTY RECIPES SHOWCASE (Reference Design Card)
+         ========================================================================== -->
+    <section id="recipes" class="recipes-section">
+      <div class="container">
+        <div class="recipe-banner-card">
+          <!-- Left Text Details -->
+          <div class="recipe-card-content">
+            <span class="recipe-tag section-tag-mono">// CHEF_SIGNATURE</span>
+            <h2 class="recipe-title section-title-display">
+              Tasty Recipes with <span>Union Foods</span>
+            </h2>
+            <p class="recipe-desc">
+              Simple, healthy and delicious recipes made with our quality products. Watch step-by-step masterclasses and dynamically adjust serving quantities.
+            </p>
+            <button class="btn-primary" onclick="window.UnionFoods.openRecipeModal()">
+              <span>View Recipes</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+            </button>
+          </div>
+
+          <!-- Right Dish Presentation with Glowing Play Video Button -->
+          <div class="recipe-media-box" onclick="window.UnionFoods.openRecipeModal()">
+            <img src="assets/images/food-paneer.jpg" alt="Hot Vegetable Kadai and Phulka Rotis">
+            <button class="play-video-glow-btn" aria-label="Play Recipe Video">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ==========================================================================
+         8. SECTION 16: POPULAR RECIPES & FOOD TICKER (Shifted Below Limited Deals)
+         ========================================================================== -->
+    <section class="food-ticker-section" aria-label="Popular Dishes & Delicacies Made with Union Foods">
+      <div class="container" style="padding-top: 1.5rem; padding-bottom: 0.75rem;">
+        <div class="section-title-wrap">
+          <span class="section-tag">Chef's Recommendations</span>
+          <h2 class="section-title" style="font-size: clamp(1.4rem, 2.2vw, 2rem); margin-bottom: 0.35rem;">Popular Dishes Prepared with Union Foods Staples</h2>
+          <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 680px;">Taste authentic Indian culinary perfection. Click on any dish below to view the recipe ingredients, step-by-step instructions, and scale servings!</p>
+        </div>
+      </div>
+      <div class="ticker-wrapper">
+        <div class="ticker-track">
+          <!-- Loop Item 1 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('puri-sabji')">
+            <img src="assets/images/food-puri-sabji.jpg" alt="Crispy Puri & Aloo Dum" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">Breakfast Favorite</span>
+              <span class="ticker-name">Crispy Puri &amp; Aloo Dum</span>
+            </div>
+          </div>
+          <!-- Loop Item 2 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('shahi-paneer')">
+            <img src="assets/images/food-paneer.jpg" alt="Shahi Paneer Masala" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">Rich &amp; Creamy</span>
+              <span class="ticker-name">Shahi Paneer Masala</span>
+            </div>
+          </div>
+          <!-- Loop Item 3 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('biryani')">
+            <img src="assets/images/food-biryani.jpg" alt="Vegetable Dum Biryani" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">Special Weekend Dish</span>
+              <span class="ticker-name">Vegetable Dum Biryani</span>
+            </div>
+          </div>
+          <!-- Loop Item 4 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('dosa')">
+            <img src="assets/images/food-dosa.jpg" alt="Crispy Masala Dosa" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">South Indian Crunch</span>
+              <span class="ticker-name">Crispy Masala Dosa</span>
+            </div>
+          </div>
+          <!-- Loop Item 5 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('samosa')">
+            <img src="assets/images/food-samosa.jpg" alt="Golden Desi Samosas" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">Evening Snack</span>
+              <span class="ticker-name">Golden Desi Samosas</span>
+            </div>
+          </div>
+          <!-- Loop Item 6 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('lassi')">
+            <img src="assets/images/food-lassi.jpg" alt="Kesar Mango Lassi" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">Refreshing Beverage</span>
+              <span class="ticker-name">Kesar Mango Lassi</span>
+            </div>
+          </div>
+          <!-- Loop Item 7 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('salad')">
+            <img src="assets/images/food-salad.jpg" alt="Organic Sprout Salad" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">Health &amp; Fitness</span>
+              <span class="ticker-name">Organic Sprout Salad</span>
+            </div>
+          </div>
+          <!-- Loop Item 8 -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('gulab-jamun')">
+            <img src="assets/images/food-gulabjamun.jpg" alt="Hot Gulab Jamun" loading="lazy">
+            <div class="ticker-overlay">
+              <span class="ticker-tag">Desi Ghee Dessert</span>
+              <span class="ticker-name">Hot Gulab Jamun</span>
+            </div>
+          </div>
+
+          <!-- Seamless duplicate for smooth infinite loop -->
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('puri-sabji')">
+            <img src="assets/images/food-puri-sabji.jpg" alt="Crispy Puri & Aloo Dum" loading="lazy">
+            <div class="ticker-overlay"><span class="ticker-tag">Breakfast Favorite</span><span class="ticker-name">Crispy Puri &amp; Aloo Dum</span></div>
+          </div>
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('shahi-paneer')">
+            <img src="assets/images/food-paneer.jpg" alt="Shahi Paneer Masala" loading="lazy">
+            <div class="ticker-overlay"><span class="ticker-tag">Rich &amp; Creamy</span><span class="ticker-name">Shahi Paneer Masala</span></div>
+          </div>
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('biryani')">
+            <img src="assets/images/food-biryani.jpg" alt="Vegetable Dum Biryani" loading="lazy">
+            <div class="ticker-overlay"><span class="ticker-tag">Special Weekend Dish</span><span class="ticker-name">Vegetable Dum Biryani</span></div>
+          </div>
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('dosa')">
+            <img src="assets/images/food-dosa.jpg" alt="Crispy Masala Dosa" loading="lazy">
+            <div class="ticker-overlay"><span class="ticker-tag">South Indian Crunch</span><span class="ticker-name">Crispy Masala Dosa</span></div>
+          </div>
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('samosa')">
+            <img src="assets/images/food-samosa.jpg" alt="Golden Desi Samosas" loading="lazy">
+            <div class="ticker-overlay"><span class="ticker-tag">Evening Snack</span><span class="ticker-name">Golden Desi Samosas</span></div>
+          </div>
+          <div class="ticker-card" onclick="window.UnionFoods.openRecipeModal('lassi')">
+            <img src="assets/images/food-lassi.jpg" alt="Kesar Mango Lassi" loading="lazy">
+            <div class="ticker-overlay"><span class="ticker-tag">Refreshing Beverage</span><span class="ticker-name">Kesar Mango Lassi</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         13. 3-COLUMN TRUST & UPDATES SECTION (Reference Design)
+         ========================================================================== -->
+    <section id="news-events" class="trust-updates-section">
+      <div class="container">
+        <div class="trust-3col-grid">
+          <!-- Column 1: What Our Customers Say -->
+          <div class="trust-column-card">
+            <div class="col-header">
+              <h3 class="col-title">What Our Customers Say</h3>
+              <div style="display: flex; gap: 0.35rem;">
+                <button id="testi-prev-btn" class="nav-arrow-btn" style="width: 32px; height: 32px;" aria-label="Previous review">
+                  <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </button>
+                <button id="testi-next-btn" class="nav-arrow-btn" style="width: 32px; height: 32px;" aria-label="Next review">
+                  <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="testimonial-box">
+              <div class="quote-icon">&ldquo;</div>
+              <p id="testimonial-quote-text" class="testimonial-quote">
+                "Union Foods products are always fresh, high quality and trusted by our family. The taste and purity are truly excellent."
+              </p>
+
+              <div class="reviewer-meta">
+                <img src="assets/images/priya-avatar.svg" alt="Priya Mishra" class="reviewer-avatar">
+                <div>
+                  <div id="testimonial-author-name" class="reviewer-name">Priya Mishra</div>
+                  <div id="testimonial-author-loc" class="reviewer-location">Bhubaneswar, Odisha</div>
+                  <div class="review-stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Latest News & Events -->
+          <div class="trust-column-card">
+            <div class="col-header">
+              <h3 class="col-title">Latest News &amp; Events</h3>
+            </div>
+
+            <div class="news-list">
+              <!-- Item 1 -->
+              <div class="news-item" onclick="window.UnionFoods.openFacilityModal()">
+                <img src="assets/images/news-fleet.svg" alt="Union Foods Expands Production Capacity" class="news-thumb">
+                <div class="news-details">
+                  <h4 class="news-title">Union Foods Expands Production Capacity</h4>
+                  <span class="news-date">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                    <span>Oct 28, 2026</span>
+                  </span>
+                </div>
+                <div class="news-arrow-circle">
+                  <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="news-item" onclick="window.UnionFoods.openFacilityModal()">
+                <img src="assets/images/news-green.svg" alt="Our Commitment to a Greener Future" class="news-thumb">
+                <div class="news-details">
+                  <h4 class="news-title">Our Commitment to a Greener Future</h4>
+                  <span class="news-date">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+                    <span>Oct 15, 2026</span>
+                  </span>
+                </div>
+                <div class="news-arrow-circle">
+                  <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Our Certifications -->
+          <div class="trust-column-card">
+            <div class="col-header">
+              <span class="section-tag section-tag-mono" style="font-size:0.75rem; margin-bottom:0.25rem;">// STATUTORY_ASSURANCE</span>
+              <h3 class="col-title section-title-display">Our Certifications</h3>
+            </div>
+
+            <div class="certs-grid">
+              <div class="certs-badges-row">
+                <img src="assets/images/cert-fssai.png" alt="FSSAI Lic. No. 12345678901234 - 100% Food Safety" class="cert-badge-item" onclick="window.UnionFoods.openCertsModal()" title="Verify FSSAI Lic. No. 12345678901234">
+                <img src="assets/images/cert-iso.png" alt="ISO 9001:2015 & ISO 22000 FSMS Certified Quality" class="cert-badge-item" onclick="window.UnionFoods.openCertsModal()" title="Verify ISO 9001:2015 & ISO 22000">
+                <img src="assets/images/cert-haccp.png" alt="HACCP Certified Hazard Analysis Critical Control Point" class="cert-badge-item" onclick="window.UnionFoods.openCertsModal()" title="Verify HACCP Safety Standards">
+              </div>
+              <p style="text-align: center; font-size: 0.82rem; color: var(--text-muted); line-height: 1.55; margin-top: 0.75rem;">
+                Audited &amp; certified by statutory standards bodies: <strong>FSSAI Lic. No. 12345678901234</strong>, <strong>ISO 9001:2015 &amp; ISO 22000 FSMS</strong>, and <strong>HACCP Certified</strong> for 100% food safety and zero contamination.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         14. BATCH TRACEABILITY SCANNER & ODISHA PINCODE CHECKER WIDGETS
+         ========================================================================== -->
+    <section class="trace-pincode-section">
+      <div class="container">
+        <div class="widget-duo-grid">
+          <!-- Widget 1: Batch Traceability Scanner -->
+          <div class="tool-widget-card">
+            <h3>
+              <svg viewBox="0 0 24 24"><path d="M3 5v4h2V5h4V3H5c-1.1 0-2 .9-2 2zm2 10H3v4c0 1.1.9 2 2 2h4v-2H5v-4zm14 4h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4zm0-16h-4v2h4v4h2V5c0-1.1-.9-2-2-2z"/></svg>
+              <span>Farm-to-Home Purity Scanner</span>
+            </h3>
+            <p>Enter the batch code printed on your product pack to trace its farm origin, milling date, and purity lab report.</p>
+            
+            <div class="input-with-btn">
+              <input type="text" id="trace-batch-input" class="widget-input" placeholder="e.g. UF-2026-WHEAT" value="UF-2026-WHEAT">
+              <button class="btn-primary" onclick="window.UnionFoods.scanBatch(document.getElementById('trace-batch-input').value)">
+                <span>Verify Purity</span>
+              </button>
+            </div>
+
+            <div class="sample-batches-wrap">
+              <span>Try sample batches:</span>
+              <button class="sample-batch-btn" onclick="document.getElementById('trace-batch-input').value='UF-2026-WHEAT'; window.UnionFoods.scanBatch('UF-2026-WHEAT');">UF-2026-WHEAT</button>
+              <button class="sample-batch-btn" onclick="document.getElementById('trace-batch-input').value='UF-2026-OIL'; window.UnionFoods.scanBatch('UF-2026-OIL');">UF-2026-OIL</button>
+              <button class="sample-batch-btn" onclick="document.getElementById('trace-batch-input').value='UF-2026-DAL'; window.UnionFoods.scanBatch('UF-2026-DAL');">UF-2026-DAL</button>
+            </div>
+
+            <div id="trace-result-box"></div>
+          </div>
+
+          <!-- Widget 2: Odisha Pincode Delivery Checker -->
+          <div class="tool-widget-card">
+            <h3>
+              <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+              <span>Check Delivery in Your Area</span>
+            </h3>
+            <p>Find out estimated delivery time and shipping rates for your PIN code in Bhubaneswar, Odisha, and pan-India.</p>
+
+            <div class="input-with-btn">
+              <input type="text" id="pincode-check-input" class="widget-input" placeholder="Enter 6-digit PIN code (e.g. 751024)" maxlength="6" value="751024">
+              <button class="btn-primary" onclick="window.UnionFoods.checkPin(document.getElementById('pincode-check-input').value)">
+                <span>Check Status</span>
+              </button>
+            </div>
+
+            <div class="sample-batches-wrap">
+              <span>Quick tests:</span>
+              <button class="sample-batch-btn" onclick="document.getElementById('pincode-check-input').value='751024'; window.UnionFoods.checkPin('751024');">751024 (Bhubaneswar)</button>
+              <button class="sample-batch-btn" onclick="document.getElementById('pincode-check-input').value='753001'; window.UnionFoods.checkPin('753001');">753001 (Cuttack)</button>
+            </div>
+
+            <div id="pincode-result-box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         15. FAQ ACCORDION & ANIMATED COUNTERS
+         ========================================================================== -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title-wrap section-title-center">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Everything You Need to Know</h2>
+        </div>
+
+        <div class="faq-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item open">
+            <button class="faq-question-btn">
+              <span>How does Union Foods ensure 100% purity without chemicals?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </button>
+            <div class="faq-answer-box" style="max-height: 180px;">
+              All our grains and pulses undergo optical sortex sorting and 5-stage mechanical cleaning. Our cooking oils are extracted using cold-press and multi-stage temperature-controlled filtration with zero added artificial preservatives or argemone contaminants.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What is your delivery coverage in Bhubaneswar and Odisha?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </button>
+            <div class="faq-answer-box">
+              We offer same-day and next-day express delivery in Bhubaneswar, Cuttack, and Puri. Statewide delivery across all 30 districts of Odisha completes within 24 to 48 hours. Orders above ₹499 enjoy 100% free home delivery.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Why are Union Foods pulses described as unpolished?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </button>
+            <div class="faq-answer-box">
+              Commercial polishing involves water, marble powder, or toxic oils that strip off the natural protein-rich outer layer. Union Foods pulses are 100% unpolished, retaining natural fiber, original taste, and nutritional integrity.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Can I place bulk orders for restaurants or retail distribution?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </button>
+            <div class="faq-answer-box">
+              Yes! We cater to distributors, grocery marts, hotels, and cloud kitchens with customized wholesale rates and bulk packaging (15kg tins, 25kg sacks). Contact us at <strong>info@unionfoods.in</strong> or phone <strong>+91 98765 43210</strong>.
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Statistics Counter Strip -->
+        <div class="stats-strip">
+          <div class="stat-col">
+            <div class="stat-num" data-target="50000" data-suffix="+">0</div>
+            <div class="stat-label">Happy Families Served</div>
+          </div>
+          <div class="stat-col">
+            <div class="stat-num" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">Purity Lab Tested</div>
+          </div>
+          <div class="stat-col">
+            <div class="stat-num" data-target="30" data-suffix="+">0</div>
+            <div class="stat-label">Odisha Districts Covered</div>
+          </div>
+          <div class="stat-col">
+            <div class="stat-num" data-target="15" data-suffix="+">0</div>
+            <div class="stat-label">Industry Quality Awards</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         16. NEWSLETTER SUBSCRIPTION RIBBON (Golden Wheat Gradient)
+         ========================================================================== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-text-wrap">
+            <div class="newsletter-mail-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <h3 class="newsletter-title">Subscribe to Our Newsletter</h3>
+              <p class="newsletter-subtext">Get the latest updates on new products, recipes, and seasonal discount offers.</p>
+            </div>
+          </div>
+
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" id="newsletter-email-input" class="newsletter-input" placeholder="Enter your email address" required>
+            <button type="submit" class="btn-newsletter-submit">
+              <span>Subscribe</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         16B. INTERACTIVE MAP LOCATION WITH LIVE PREVIEW
+         ========================================================================== -->
+    <section id="locations" class="map-location-section" aria-label="Our Locations & Plants on Map">
+      <div class="container">
+        <div class="map-location-header">
+          <div class="section-title-wrap">
+            <span class="section-tag">VISIT OUR FACILITIES &amp; STORES</span>
+            <h2 class="section-title">Locate Union Foods on Google Maps</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem; max-width: 680px;">
+              Visit our automated, contactless processing plant in Bhubaneswar or stop by our certified retail experience centers across Odisha.
+            </p>
+          </div>
+        </div>
+
+        <!-- Location Switcher Tabs -->
+        <div class="map-tabs-nav">
+          <button class="map-tab-btn active" data-location-key="chandaka">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Chandaka HQ &amp; Plant (Bhubaneswar)</span>
+          </button>
+          <button class="map-tab-btn" data-location-key="mancheswar">
+            <svg viewBox="0 0 24 24"><path d="M22 22H2V11l6-5 6 5v-3l6 5v9zm-10-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            <span>Mancheswar Milling Hub</span>
+          </button>
+          <button class="map-tab-btn" data-location-key="saheed_nagar">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>
+            <span>Saheed Nagar Retail Center</span>
+          </button>
+          <button class="map-tab-btn" data-location-key="cuttack">
+            <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg>
+            <span>Madhupatna Depot (Cuttack)</span>
+          </button>
+        </div>
+
+        <!-- Map & Info Duo Grid -->
+        <div class="map-showcase-grid">
+          <!-- Left: Info & Details Card -->
+          <div class="map-info-card">
+            <div>
+              <div class="map-badge-status">
+                <span class="status-dot"></span>
+                <span id="map-loc-status">Open Now • Mon - Sat 9:00 AM - 7:00 PM</span>
+              </div>
+
+              <span id="map-loc-type" style="font-size: 0.76rem; font-weight: 800; color: var(--primary-orange); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.2rem;">Corporate HQ &amp; Processing Plant</span>
+              <h3 id="map-loc-name" class="map-location-title">Union Foods Headquarters &amp; Main Plant</h3>
+              <p id="map-loc-address" class="map-location-address">Plot No. 14, Chandaka Industrial Estate, Patia, Bhubaneswar, Odisha - 751024</p>
+
+              <div class="map-details-list">
+                <div class="map-detail-row">
+                  <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  <span><strong>Hours:</strong> <span id="map-loc-hours">Mon - Sat: 9:00 AM - 7:00 PM (Closed Sundays)</span></span>
+                </div>
+                <div class="map-detail-row">
+                  <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                  <span><strong>Phone:</strong> <a id="map-loc-phone" href="tel:+919876543210" style="color: var(--primary-orange); font-weight: 700;">+91 98765 43210</a></span>
+                </div>
+                <div class="map-detail-row">
+                  <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  <span><strong>Email:</strong> <a id="map-loc-email" href="mailto:info@unionfoods.in" style="color: var(--primary-orange);">info@unionfoods.in</a></span>
+                </div>
+              </div>
+
+              <div id="map-loc-tags" class="map-features-tags">
+                <span class="map-tag">Main Processing Plant</span>
+                <span class="map-tag">Contactless Packaging</span>
+                <span class="map-tag">Quality QA Lab</span>
+                <span class="map-tag">Visitor Parking</span>
+                <span class="map-tag">B2B Wholesale Desk</span>
+              </div>
+            </div>
+
+            <div class="map-action-btns">
+              <a id="map-directions-btn" href="https://www.google.com/maps/search/?api=1&query=Chandaka+Industrial+Estate+Patia+Bhubaneswar+Odisha" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.65rem 1.3rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span>Get Directions</span>
+              </a>
+              <button class="btn-secondary" onclick="window.UnionFoods.openFacilityModal()" style="padding: 0.65rem 1.2rem;">
+                <span>Virtual Plant Tour</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Live Google Map Iframe & Toolbar -->
+          <div class="map-frame-wrapper">
+            <div class="map-toolbar">
+              <div class="map-toolbar-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--primary-orange)"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span>Interactive Location Preview</span>
+              </div>
+              <div class="map-toolbar-actions">
+                <button class="map-ctrl-btn active" data-mode="m">Default Map</button>
+                <button class="map-ctrl-btn" data-mode="k">Satellite View</button>
+              </div>
+            </div>
+
+            <div class="map-embed-container">
+              <iframe id="map-iframe" class="map-embed-iframe" 
+                src="https://maps.google.com/maps?q=Chandaka+Industrial+Area+Patia+Bhubaneswar+Odisha+India&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                title="Union Foods Location Map Preview">
+              </iframe>
+
+              <div class="map-floating-pin">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span id="map-floating-pin-name">Union Foods Headquarters &amp; Main Plant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       17. MASTER FOOTER (Reference Design Accurate)
+       ========================================================================== -->
+  <footer id="contact" class="main-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col">
+          <a href="#home" class="brand-logo-link">
+            <img src="assets/images/union-foods-logo-white.png" alt="Union Foods - Crafting Quality Est. 1982" class="footer-logo-img">
+          </a>
+          <p>
+            Bringing pure, nutritious and tasty food products to every home with quality and trust. Grounded in tradition, powered by modern technology.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#home">Home</a></li>
+            <li class="footer-link-item"><a href="#about">About Us</a></li>
+            <li class="footer-link-item"><a href="#products-section">Products</a></li>
+            <li class="footer-link-item"><a href="#recipes">Recipes</a></li>
+            <li class="footer-link-item"><a href="#why-choose">Gallery</a></li>
+            <li class="footer-link-item"><a href="#news-events">News &amp; Events</a></li>
+            <li class="footer-link-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Our Products -->
+        <div class="footer-col">
+          <h4>Our Products</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#products-section" onclick="window.UnionFoods.currentCategory='oil'">Cooking Oil</a></li>
+            <li class="footer-link-item"><a href="#products-section" onclick="window.UnionFoods.currentCategory='flour'">Flour &amp; Grains</a></li>
+            <li class="footer-link-item"><a href="#products-section" onclick="window.UnionFoods.currentCategory='pulses'">Pulses &amp; Dal</a></li>
+            <li class="footer-link-item"><a href="#products-section" onclick="window.UnionFoods.currentCategory='spices'">Spices</a></li>
+            <li class="footer-link-item"><a href="#products-section" onclick="window.UnionFoods.currentCategory='snacks'">Snacks</a></li>
+            <li class="footer-link-item"><a href="#products-section" onclick="window.UnionFoods.currentCategory='beverages'">Beverages</a></li>
+            <li class="footer-link-item"><a href="#products-section" onclick="window.UnionFoods.currentCategory='packaged'">Packaged Foods</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Support -->
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#home" onclick="document.querySelector('.faq-section').scrollIntoView({behavior: 'smooth'})">FAQs</a></li>
+            <li class="footer-link-item"><a href="#home" onclick="alert('Union Foods strictly adheres to Indian Consumer Protection & FSSAI terms.')">Terms &amp; Conditions</a></li>
+            <li class="footer-link-item"><a href="#home" onclick="alert('Your privacy is strictly safeguarded under Indian DPDP Act 2023.')">Privacy Policy</a></li>
+            <li class="footer-link-item"><a href="#home" onclick="alert('100% Hassle-Free Returns on damaged packaging within 48 hours.')">Return &amp; Refund</a></li>
+            <li class="footer-link-item"><a href="#home" onclick="document.querySelector('.trace-pincode-section').scrollIntoView({behavior: 'smooth'})">Shipping Information</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact Us -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Union Foods Private Limited, Bhubaneswar, Odisha - 751024 (<a href="#locations" style="color: #ffa726; font-weight: 700;">View Map Preview</a>)</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:info@unionfoods.in">info@unionfoods.in</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 6: Stay Connected -->
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <div class="footer-social-circles">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle-link fb" title="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle-link ig" title="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-circle-link yt" title="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-link in" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 Union Foods Private Limited. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#home">Privacy Policy</a>
+          <span>|</span>
+          <a href="#home">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       18. SLIDE-OVER CART DRAWER & CHECKOUT ENGINE
+       ========================================================================== -->
+  <div id="cart-drawer-overlay" class="cart-drawer-overlay" aria-hidden="true"></div>
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Shopping Cart Drawer">
+    <div class="cart-drawer-header">
+      <h3>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--primary-orange)"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        <span>Your Shopping Cart</span>
+      </h3>
+      <button class="modal-close-btn" style="position: static;" onclick="window.UnionFoods.closeCartDrawer()" aria-label="Close cart">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div class="free-shipping-meter">
+      <div id="free-shipping-text">Add ₹499 more for FREE Express Delivery!</div>
+      <div class="meter-bar-bg">
+        <div id="free-shipping-fill" class="meter-bar-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Items Container -->
+    <div id="cart-items-container" class="cart-items-container"></div>
+
+    <!-- Cart Footer & Calculation -->
+    <div class="cart-drawer-footer">
+      <form id="cart-coupon-form" class="cart-coupon-form">
+        <input type="text" id="cart-coupon-input" class="cart-coupon-input" placeholder="Promo code (e.g. UNION10)">
+        <button type="submit" class="btn-primary" style="padding: 0.45rem 1rem; font-size: 0.82rem;">Apply</button>
+      </form>
+
+      <div class="cart-totals-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">₹0</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery Fee</span>
+          <span id="cart-shipping">₹50</span>
+        </div>
+        <div class="summary-row" style="color: #16a34a;">
+          <span>Discount</span>
+          <span id="cart-discount">-₹0</span>
+        </div>
+        <div class="summary-row grand-total">
+          <span>Grand Total</span>
+          <span id="cart-total" style="color: var(--primary-orange);">₹0</span>
+        </div>
+      </div>
+
+      <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="window.UnionFoods.startCheckout()">
+        <span>Proceed to Checkout</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       19. MODALS: QUICK VIEW, RECIPES, CERTS, CHECKOUT, CONFIRMATION
+       ========================================================================== -->
+  
+  <!-- Product Quick View Modal -->
+  <div id="quickview-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-box" style="max-width: 780px;">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <div id="quickview-body"></div>
+    </div>
+  </div>
+
+  <!-- Recipe Video & Dynamic Serving Scaler Modal -->
+  <div id="recipe-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-box" style="max-width: 680px; padding: 2rem;">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+
+      <span style="font-size: 0.78rem; font-weight: 800; color: var(--primary-orange); text-transform: uppercase;">Chef's Special Recipe</span>
+      <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-heading); margin: 0.3rem 0 1rem;">
+        Healthy Vegetable Kadai with Union Foods Atta Rotis
+      </h2>
+
+      <!-- Simulated Recipe Video Player -->
+      <div style="position: relative; width: 100%; height: 230px; background: #000; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 1.25rem;">
+        <img src="assets/images/food-paneer.jpg" alt="Video preview" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.4); color: #fff;">
+          <button style="width: 54px; height: 54px; border-radius: 50%; background: var(--primary-orange); color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,0.5);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <span style="font-size: 0.82rem; font-weight: 700; margin-top: 0.5rem;">Watch HD Cooking Masterclass (5:20)</span>
+        </div>
+      </div>
+
+      <!-- Serving Scaler Toolbar -->
+      <div style="display: flex; align-items: center; justify-content: space-between; background: var(--bg-warm); padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.2rem;">
+        <div>
+          <strong style="color: var(--text-heading); font-size: 0.9rem;">Adjust Servings:</strong>
+          <span style="font-size: 0.82rem; color: var(--text-muted); display: block;">Quantities recalculate automatically</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <button class="nav-arrow-btn" style="width: 30px; height: 30px;" onclick="window.UnionFoods.adjustServings(-1)">-</button>
+          <span id="recipe-servings-val" style="font-size: 1.1rem; font-weight: 800; min-width: 24px; text-align: center; color: var(--primary-orange);">4</span>
+          <button class="nav-arrow-btn" style="width: 30px; height: 30px;" onclick="window.UnionFoods.adjustServings(1)">+</button>
+        </div>
+      </div>
+
+      <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--text-heading); margin-bottom: 0.6rem;">Ingredients Checklist:</h3>
+      <ul id="recipe-ingredients-list" style="margin-bottom: 1.5rem;"></ul>
+
+      <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="window.UnionFoods.addToCart('uf-atta-1', 1); window.UnionFoods.addToCart('uf-oil-1', 1);">
+        <span>Add All Required Union Foods Ingredients to Cart</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Facility Tour & Story Modal -->
+  <div id="facility-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-box" style="max-width: 650px; padding: 2rem;">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <span style="font-size: 0.78rem; font-weight: 800; color: var(--primary-orange); text-transform: uppercase;">Our Story &amp; Facility</span>
+      <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-heading); margin: 0.3rem 0 1rem;">
+        Union Foods Processing Plant, Bhubaneswar
+      </h2>
+      <img src="assets/images/union-foods-facility.jpg" alt="Union Foods Plant" style="border-radius: var(--radius-sm); margin-bottom: 1.25rem; width: 100%;">
+      <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
+        Established with a commitment to uncompromised food purity, Union Foods operates advanced European optical sortex sorters, multi-stage cold extraction expellers, and automated hygienic nitrogen-flushed pouch lines right here in Odisha.
+      </p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; font-size: 0.85rem; font-weight: 600; color: var(--text-heading);">
+        <div style="background: var(--bg-warm); padding: 0.6rem 0.8rem; border-radius: 6px;">🌱 100% Solar-Powered Plant</div>
+        <div style="background: var(--bg-warm); padding: 0.6rem 0.8rem; border-radius: 6px;">💧 Zero Effluent Discharge</div>
+        <div style="background: var(--bg-warm); padding: 0.6rem 0.8rem; border-radius: 6px;">🛡️ Contactless Packing</div>
+        <div style="background: var(--bg-warm); padding: 0.6rem 0.8rem; border-radius: 6px;">🌾 Direct Farmer Procurement</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certifications Verification Modal -->
+  <div id="certs-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-box" style="max-width: 600px; padding: 2rem;">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <span style="font-size: 0.78rem; font-weight: 800; color: #16a34a; text-transform: uppercase;">Official Quality Accreditation</span>
+      <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-heading); margin: 0.3rem 0 1.25rem;">
+        Our Food Safety &amp; Quality Certifications
+      </h2>
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <div style="display: flex; gap: 1rem; align-items: center; background: #eff6ff; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid #bfdbfe;">
+          <img src="assets/images/cert-fssai.png" style="width: 64px; height: 64px; object-fit: contain;" alt="FSSAI 100% Food Safety">
+          <div>
+            <h4 style="color: #1e3a8a; font-weight: 800;">FSSAI Central Food Safety License</h4>
+            <p style="font-size: 0.84rem; color: #1e40af; font-weight: 600;">Lic. No. 12345678901234 &bull; 100% Food Safety Certified</p>
+            <p style="font-size: 0.78rem; color: #64748b;">Statutory compliance guaranteed across all milling, extraction &amp; packaging.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center; background: #f0f9ff; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid #bae6fd;">
+          <img src="assets/images/cert-iso.png" style="width: 64px; height: 64px; object-fit: contain;" alt="ISO 9001:2015 & ISO 22000">
+          <div>
+            <h4 style="color: #0369a1; font-weight: 800;">ISO 9001 : 2015 &amp; ISO 22000 FSMS</h4>
+            <p style="font-size: 0.84rem; color: #0284c7; font-weight: 600;">Certified Quality &amp; Food Safety Management System</p>
+            <p style="font-size: 0.78rem; color: #64748b;">Audited international quality benchmarks for processing integrity.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center; background: #f0fdf4; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid #bbf7d0;">
+          <img src="assets/images/cert-haccp.png" style="width: 64px; height: 64px; object-fit: contain;" alt="HACCP Certified">
+          <div>
+            <h4 style="color: #166534; font-weight: 800;">HACCP Certified Quality</h4>
+            <p style="font-size: 0.84rem; color: #15803d; font-weight: 600;">Hazard Analysis Critical Control Point</p>
+            <p style="font-size: 0.78rem; color: #64748b;">Zero microbial and chemical contamination assurance at every touchpoint.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ==========================================================================
+       SMART SEARCH MODAL & RESULTS DASHBOARD (Site-Wide Engine)
+       ========================================================================== -->
+  <div id="search-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="modal-content-box search-modal-box">
+      <button class="modal-close-btn" onclick="window.UnionFoods.closeSearchModal()" aria-label="Close search dialog">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+
+      <!-- Search Header -->
+      <div class="search-modal-header">
+        <div class="search-title-row">
+          <img src="assets/images/union-foods-logo.png" alt="Union Foods" class="search-brand-mark">
+          <h2 id="search-modal-title" class="search-modal-heading">Smart Search Engine</h2>
+        </div>
+        <p class="search-modal-sub">Search across all products, cooking oils, grains, dals, spices, offers, recipes, certifications &amp; company information.</p>
+        
+        <!-- Search Input Bar with Clear & Submit -->
+        <div class="search-bar-composite">
+          <span class="search-composite-icon">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </span>
+          <input 
+            type="search" 
+            id="modal-search-input" 
+            class="modal-search-input" 
+            placeholder="Search products, categories, offers, recipes..." 
+            autocomplete="off" 
+            aria-label="Search website"
+          >
+          <button type="button" id="modal-search-clear" class="search-clear-btn" aria-label="Clear search text" style="display: none;">
+            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          </button>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="search-filter-pills" id="search-filter-pills" role="tablist" aria-label="Filter search results by type">
+          <button type="button" class="search-filter-pill active" data-filter="all">All Content (<span id="count-all">0</span>)</button>
+          <button type="button" class="search-filter-pill" data-filter="product">Products (<span id="count-product">0</span>)</button>
+          <button type="button" class="search-filter-pill" data-filter="category">Categories (<span id="count-category">0</span>)</button>
+          <button type="button" class="search-filter-pill" data-filter="offer">Offers &amp; Deals (<span id="count-offer">0</span>)</button>
+          <button type="button" class="search-filter-pill" data-filter="recipe">Recipes (<span id="count-recipe">0</span>)</button>
+          <button type="button" class="search-filter-pill" data-filter="info">Company Info (<span id="count-info">0</span>)</button>
+          <button type="button" class="search-filter-pill" data-filter="certification">Certifications (<span id="count-certification">0</span>)</button>
+        </div>
+
+        <!-- Sort & Controls Row -->
+        <div class="search-toolbar">
+          <div class="search-status-text" id="search-status-text">Showing popular recommendations</div>
+          <div class="search-sort-wrap">
+            <label for="search-sort-select">Sort by:</label>
+            <select id="search-sort-select" class="search-sort-select" onchange="window.UnionFoods.triggerSearchReSort()">
+              <option value="relevance">Best Match</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A to Z</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Body -->
+      <div class="search-modal-body">
+        <!-- Recent & Popular Search Chips -->
+        <div id="search-defaults-box" class="search-defaults-box">
+          <div class="search-chips-block" id="recent-searches-block" style="display: none;">
+            <div class="search-chips-header">
+              <span>Recent Searches</span>
+              <button type="button" class="clear-history-btn" onclick="window.UnionFoods.clearSearchHistory()">Clear History</button>
+            </div>
+            <div id="recent-chips-container" class="search-chips-list"></div>
+          </div>
+
+          <div class="search-chips-block">
+            <div class="search-chips-header">
+              <span>Popular Searches</span>
+            </div>
+            <div class="search-chips-list">
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('Mustard Oil')">Mustard Oil</button>
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('Sharbati Atta')">Sharbati Atta</button>
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('Moong Dal')">Moong Dal</button>
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('Sunflower Oil')">Sunflower Oil</button>
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('Turmeric Spices')">Pure Turmeric</button>
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('BOGO Offer')">BOGO Free Offer</button>
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('FSSAI Certification')">FSSAI Certification</button>
+              <button type="button" class="search-chip" onclick="window.UnionFoods.applySearchChip('Bhubaneswar Hub')">Bhubaneswar Hub</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Results Grid (Responsive: 4 cols desktop, 2-3 cols tablet, 1-2 cols mobile) -->
+        <div id="search-results-grid" class="search-results-grid"></div>
+
+        <!-- No Results Fallback -->
+        <div id="search-no-results" class="search-no-results" style="display: none;">
+          <div class="no-results-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--text-muted)"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          </div>
+          <h3>Sorry! We couldn't find what you're looking for.</h3>
+          <p>Please double-check your spelling or explore these popular categories:</p>
+          <div class="no-results-quick-links">
+            <button type="button" class="btn-sm-tag" onclick="window.UnionFoods.applySearchChip('Cooking Oil')">Cooking Oil</button>
+            <button type="button" class="btn-sm-tag" onclick="window.UnionFoods.applySearchChip('Flour')">Chakki Atta</button>
+            <button type="button" class="btn-sm-tag" onclick="window.UnionFoods.applySearchChip('Pulses')">Organic Dals</button>
+            <button type="button" class="btn-sm-tag" onclick="window.UnionFoods.applySearchChip('Spices')">Pure Spices</button>
+          </div>
+          <button type="button" class="btn-primary" style="margin-top: 1rem;" onclick="window.UnionFoods.closeSearchModal(); window.location.href='#home';">
+            Return to Homepage
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Simulated Quick Order Checkout Modal -->
+  <div id="checkout-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-box" style="max-width: 580px; padding: 2rem;">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <span style="font-size: 0.78rem; font-weight: 800; color: var(--primary-orange); text-transform: uppercase;">Fast Checkout</span>
+      <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-heading); margin: 0.3rem 0 1rem;">Complete Your Order</h2>
+      
+      <div id="checkout-summary-box"></div>
+
+      <form onsubmit="window.UnionFoods.completeOrder(event)">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+          <input type="text" class="widget-input" placeholder="Full Name" required value="Priya Mishra">
+          <input type="tel" class="widget-input" placeholder="Phone Number" required value="+91 98765 43210">
+        </div>
+        <input type="text" class="widget-input" style="width: 100%; margin-bottom: 0.75rem;" placeholder="Delivery Address (Flat / House No / Street)" required value="Flat 402, Royal Palms, Patia">
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 0.75rem; margin-bottom: 1.25rem;">
+          <input type="text" class="widget-input" placeholder="City" value="Bhubaneswar, Odisha" readonly>
+          <input type="text" class="widget-input" placeholder="PIN Code" value="751024" required>
+        </div>
+
+        <div style="background: var(--bg-warm); padding: 0.85rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem;">
+          <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-heading); display: block; margin-bottom: 0.4rem;">Select Payment Method:</label>
+          <div style="display: flex; gap: 1rem; font-size: 0.85rem; color: var(--text-heading);">
+            <label style="display: flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+              <input type="radio" name="paymethod" checked style="accent-color: var(--primary-orange);">
+              <span>UPI / QR / GPay</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+              <input type="radio" name="paymethod" style="accent-color: var(--primary-orange);">
+              <span>Cash on Delivery (COD)</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+          <span>Confirm &amp; Place Order</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Confirmation Screen -->
+  <div id="order-confirmation-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content-box" style="max-width: 520px; padding: 2.2rem; text-align: center;">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+
+      <div style="width: 72px; height: 72px; border-radius: 50%; background: #dcfce7; color: #16a34a; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      </div>
+
+      <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--text-heading); margin-bottom: 0.35rem;">Order Confirmed!</h2>
+      <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+        Thank you for choosing Union Foods. Your daily essentials are being freshly packed and dispatched from our Bhubaneswar unit.
+      </p>
+
+      <div style="background: var(--bg-warm); padding: 1.25rem; border-radius: var(--radius-sm); text-align: left; margin-bottom: 1.5rem; font-size: 0.88rem;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+          <span style="color: var(--text-muted);">Order ID:</span>
+          <strong id="conf-order-id" style="color: var(--primary-orange);">UF-782910</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+          <span style="color: var(--text-muted);">Date:</span>
+          <span id="conf-order-date">Nov 12, 2026</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem;">
+          <span style="color: var(--text-muted);">Estimated Delivery:</span>
+          <strong style="color: #16a34a;">Tomorrow, by 11:00 AM</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Delivery Hub:</span>
+          <span>Bhubaneswar Express Hub</span>
+        </div>
+      </div>
+
+      <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="document.getElementById('order-confirmation-modal').classList.remove('active')">
+        <span>Back to Home</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       20. FLOATING DOCK: WHATSAPP & BACK TO TOP
+       ========================================================================== -->
+  <div class="floating-actions-dock" aria-label="Quick Actions">
+    <button class="whatsapp-float-btn" onclick="window.UnionFoods.openWhatsApp()" title="Chat on WhatsApp" aria-label="WhatsApp Chat">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.167 8.167 0 0 1 2.4 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.24-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.3 3.8 2.53 1.09 2.53.73 2.99.69.46-.04 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+    </button>
+
+    <button id="back-to-top-btn" class="back-to-top-btn" title="Back to Top" aria-label="Scroll back to top">
+      <svg class="scroll-ring-svg" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="23" class="scroll-ring-circle"/>
+      </svg>
+      <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+  </div>
+
+  <!-- Toast Notification Mount Point -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Primary JavaScript Logic -->
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
